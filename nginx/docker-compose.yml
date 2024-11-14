@@ -7,3 +7,7 @@ services:
     configs:
       - source: omni.asc
         target: /omni.asc
+configs:
+  omni.asc:
+    content: |  
+      ${ETCD_ENCRYPTION_KEY}
