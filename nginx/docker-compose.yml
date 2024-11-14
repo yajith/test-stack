@@ -1,0 +1,9 @@
+name: nginx-on-prem
+version: '3'
+services:
+  omni:
+    container_name: nginx
+    image: "nginx:${OMNI_IMG_TAG}"
+    configs:
+      - source: omni.asc
+        target: /omni.asc
